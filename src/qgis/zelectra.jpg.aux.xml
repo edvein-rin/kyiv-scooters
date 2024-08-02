@@ -1,0 +1,55 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="EXIF_DateTimeOriginal">2024:08:02 17:00:50</MDI>
+    <MDI key="EXIF_ImageUniqueID">266a4ebe-d5bc-48a0-ad31-75123c3dd88b</MDI>
+    <MDI key="EXIF_LightSource">0</MDI>
+    <MDI key="EXIF_OffsetTimeOriginal">+03:00</MDI>
+    <MDI key="EXIF_Orientation">0</MDI>
+    <MDI key="EXIF_Software">Android UP1A.231005.007.S926BXXS2AXD5</MDI>
+    <MDI key="EXIF_SubSecTime_Original">266</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="COMPRESSION">JPEG</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MINIMUM">4</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">188.8902540766</MDI>
+      <MDI key="STATISTICS_STDDEV">41.142572571353</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MINIMUM">3</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">204.35047402351</MDI>
+      <MDI key="STATISTICS_STDDEV">27.449440487044</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MINIMUM">2</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">192.70542282897</MDI>
+      <MDI key="STATISTICS_STDDEV">46.464414527556</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "1abc030bd33fbda8",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe6a04937b2048db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e07066fc911ec7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comparison.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "164f5dc4148a9f8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "7fe6fa267293f154",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "061418830ea1b47c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5025ccbc4546df1b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "341b77b6158039fd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5bc5eb9b5cbb16af",
+    "type": "split",
+    "children": [
+      {
+        "id": "501feea55a44e23e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62a1ddde5cadf997",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Comparison.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "91f64d2db151754c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Comparison.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fd7ff0fcdfb7656e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d34ea0d59c09687f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Comparison.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6e07066fc911ec7c",
+  "lastOpenFiles": [
+    "Links.md",
+    "Comparison.md",
+    "Companies/Jet.md",
+    "Companies/BikeNow.md",
+    "Companies/Bolt.md",
+    "Companies"
+  ]
+}
