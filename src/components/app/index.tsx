@@ -1,19 +1,6 @@
-import "./styles.css";
-
 export const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+  <div className="flex flex-col gap-2">
+    <header>Header</header>
+    <main className="App">Hi there! I'm testing Tailwind setup :)</main>
   </div>
 );
