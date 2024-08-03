@@ -21,6 +21,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
+        env:
+          REACT_APP_MAPBOX_API_KEY: ${{ secrets.REACT_APP_MAPBOX_API_KEY }}
         run: pnpm run build
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v4.0.0
