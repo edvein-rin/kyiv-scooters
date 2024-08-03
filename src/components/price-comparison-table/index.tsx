@@ -15,8 +15,6 @@ export const PriceComparisonTable: FC<PriceComparisonTableProps> = ({
   <table
     align="left"
     className={styles(
-      "[&>tr:not(:first-child)>th]:text-left",
-      "[&>tr>td]:text-right",
       "[&_th]:px-4 [&_th]:py-1.5",
       "[&_td]:px-4 [&_td]:py-1.5",
       "[&_td]:border-b [&_th]:border-b",
@@ -31,7 +29,7 @@ export const PriceComparisonTable: FC<PriceComparisonTableProps> = ({
         ))}
       </tr>
     </thead>
-    <tbody>
+    <tbody className={styles("[&_tr>th]:text-left", "[&_tr_td]:text-right")}>
       <Row
         label="Розблокування"
         values={scooterProviders.map(
