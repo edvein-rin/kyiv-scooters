@@ -48,11 +48,12 @@ export const Row: FC<RowProps> = ({
   return (
     <tr>
       <th>{label}</th>
-      {values.map((value) => {
+      {values.map((value, index) => {
         const highlighted =
           value === valueToHighlight && valueToHighlight !== undefined;
         return (
           <td
+            key={index}
             className={styles(
               "whitespace-nowrap",
               highlighted && "font-semibold"

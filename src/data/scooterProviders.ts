@@ -1,3 +1,11 @@
+import boltGeoJson from "data/coverage/bolt.json";
+import jetGeoJson from "data/coverage/jet.json";
+import jet2GeoJson from "data/coverage/jet2.json";
+import bikeNowGeoJson from "data/coverage/bike-now.json";
+import zelectraGeoJson from "data/coverage/zelectra.json";
+import flyGoGeoJson from "data/coverage/fly-go.json";
+import birdGeoJson from "data/coverage/bird.json";
+
 export type ScooterProvider = {
   id: string;
   title: string;
@@ -11,6 +19,8 @@ export type ScooterProvider = {
   reservationPricePerMinute: number | null | undefined;
   dailyCap: number | null | undefined;
   maxSpeedKmPerHour: number | undefined;
+  coveragePolygons: (typeof boltGeoJson)[];
+  brandColor: string;
 };
 
 export const scooterProviders: ScooterProvider[] = [
@@ -28,6 +38,8 @@ export const scooterProviders: ScooterProvider[] = [
     reservationPricePerMinute: null,
     dailyCap: 490,
     maxSpeedKmPerHour: 20,
+    coveragePolygons: [boltGeoJson],
+    brandColor: "#35d187",
   },
   {
     id: "jet",
@@ -43,6 +55,8 @@ export const scooterProviders: ScooterProvider[] = [
     reservationPricePerMinute: null,
     dailyCap: null,
     maxSpeedKmPerHour: 25,
+    coveragePolygons: [jetGeoJson, jet2GeoJson],
+    brandColor: "#017fe6",
   },
   {
     id: "bike-now",
@@ -58,6 +72,8 @@ export const scooterProviders: ScooterProvider[] = [
     reservationPricePerMinute: null,
     dailyCap: null,
     maxSpeedKmPerHour: 20,
+    coveragePolygons: [bikeNowGeoJson],
+    brandColor: "#2368a8",
   },
   {
     id: "zelectra",
@@ -73,6 +89,8 @@ export const scooterProviders: ScooterProvider[] = [
     reservationPricePerMinute: null,
     dailyCap: 499,
     maxSpeedKmPerHour: undefined,
+    coveragePolygons: [zelectraGeoJson],
+    brandColor: "#56fade",
   },
   {
     id: "fly-go",
@@ -88,6 +106,8 @@ export const scooterProviders: ScooterProvider[] = [
     reservationPricePerMinute: 1,
     dailyCap: null,
     maxSpeedKmPerHour: undefined,
+    coveragePolygons: [flyGoGeoJson],
+    brandColor: "#fed000",
   },
   {
     id: "bird",
@@ -104,5 +124,7 @@ export const scooterProviders: ScooterProvider[] = [
     reservationPricePerMinute: undefined,
     dailyCap: null,
     maxSpeedKmPerHour: undefined,
+    coveragePolygons: [birdGeoJson],
+    brandColor: "#2ccef1",
   },
 ];

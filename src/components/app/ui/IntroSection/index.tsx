@@ -11,30 +11,30 @@ export const IntroSection: FC = () => (
       <span>
         В Києві є <b>{scooterProviders.length}</b> провайдерів електросамокатів
         (насправді є ще <b>E-wings</b>, але його потестити не вдалося):{" "}
-        <ul>
-          {scooterProviders.map((scooterProvider, index) => (
-            <li>
-              <b>{scooterProvider.title}</b> (
-              <Link
-                href={scooterProvider.androidAppDownloadUrl}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                Android
-              </Link>
-              ,{" "}
-              <Link
-                href={scooterProvider.iosAppDownloadUrl}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                iOS
-              </Link>
-              ){index === scooterProviders.length - 1 ? "." : ","}
-            </li>
-          ))}
-        </ul>
       </span>
     </p>
+    <ul>
+      {scooterProviders.map((scooterProvider, index) => (
+        <li key={scooterProvider.title}>
+          <b>{scooterProvider.title}</b> (
+          <Link
+            href={scooterProvider.androidAppDownloadUrl}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            Android
+          </Link>
+          ,{" "}
+          <Link
+            href={scooterProvider.iosAppDownloadUrl}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            iOS
+          </Link>
+          ){index === scooterProviders.length - 1 ? "." : ","}
+        </li>
+      ))}
+    </ul>
   </TextSection>
 );

@@ -15,7 +15,9 @@ export const NAV_ITEMS = [
 export const Navigation = () => (
   <nav className="flex gap-4 md:gap-8 align-center items-center">
     {NAV_ITEMS.map(({ title, route }) => (
-      <Link href={route}>{title}</Link>
+      <Link key={title} href={route}>
+        {title}
+      </Link>
     ))}
   </nav>
 );
