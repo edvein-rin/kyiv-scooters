@@ -4,6 +4,8 @@ import { Source, Layer } from "react-map-gl";
 import { scooterProviders } from "data/scooterProviders";
 import { Map } from "components/base";
 
+import kyivPolygon from "data/kyiv.json";
+
 const KYIV_COORDINATES = {
   latitude: 50.450001,
   longitude: 30.523333,
@@ -28,6 +30,22 @@ export const ScooterProviderCoverageMap: FC = () => {
           }}
           scrollZoom={false}
         >
+          <Source id="kyiv-borders" type="geojson" data={kyivPolygon}>
+            <Layer
+              type="fill"
+              paint={{
+                "fill-color": "#333333",
+                "fill-opacity": 0.05,
+              }}
+            />
+            <Layer
+              type="line"
+              paint={{
+                "line-color": "#2f313f",
+                "line-width": 0,
+              }}
+            />
+          </Source>
           {scooterProviders.flatMap((scooterProvider) =>
             scooterProvider.coveragePolygons.map((coveragePolygon, index) => {
               if (!providersVisibility[scooterProvider.id]) return null;
@@ -39,7 +57,7 @@ export const ScooterProviderCoverageMap: FC = () => {
                     type="fill"
                     paint={{
                       "fill-color": scooterProvider.brandColor,
-                      "fill-opacity": 0.5,
+                      "fill-opacity": 0.35,
                     }}
                   />
                   <Layer
