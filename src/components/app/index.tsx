@@ -6,7 +6,6 @@ import { Footer, Header } from "./ui";
 
 export const App: FC = () => (
   <>
-    <Header />
     <main>
       <HomePage />
     </main>
