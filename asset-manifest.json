@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/kyiv-scooters/static/css/main.37bb3925.css",
-    "main.js": "/kyiv-scooters/static/js/main.85c65c6c.js",
+    "main.css": "/kyiv-scooters/static/css/main.ac6d497f.css",
+    "main.js": "/kyiv-scooters/static/js/main.fe368ecc.js",
+    "static/js/631.e1cc461d.chunk.js": "/kyiv-scooters/static/js/631.e1cc461d.chunk.js",
     "index.html": "/kyiv-scooters/index.html",
-    "main.37bb3925.css.map": "/kyiv-scooters/static/css/main.37bb3925.css.map",
-    "main.85c65c6c.js.map": "/kyiv-scooters/static/js/main.85c65c6c.js.map"
+    "main.ac6d497f.css.map": "/kyiv-scooters/static/css/main.ac6d497f.css.map",
+    "main.fe368ecc.js.map": "/kyiv-scooters/static/js/main.fe368ecc.js.map",
+    "631.e1cc461d.chunk.js.map": "/kyiv-scooters/static/js/631.e1cc461d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37bb3925.css",
-    "static/js/main.85c65c6c.js"
+    "static/css/main.ac6d497f.css",
+    "static/js/main.fe368ecc.js"
   ]
 }
