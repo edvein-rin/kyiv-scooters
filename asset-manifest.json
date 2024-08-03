@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kyiv-scooters/static/css/main.37bb3925.css",
+    "main.js": "/kyiv-scooters/static/js/main.85c65c6c.js",
+    "index.html": "/kyiv-scooters/index.html",
+    "main.37bb3925.css.map": "/kyiv-scooters/static/css/main.37bb3925.css.map",
+    "main.85c65c6c.js.map": "/kyiv-scooters/static/js/main.85c65c6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37bb3925.css",
+    "static/js/main.85c65c6c.js"
+  ]
+}
