@@ -1,4 +1,4 @@
-import { Link } from "components/link";
+import { Link } from "components/base/Link";
 import { ANCHORS } from "utils";
 
 export const NAV_ITEMS = [

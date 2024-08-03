@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import { styles } from "utils";
 
 export const findSmallest = (values: Value[]): Value =>
@@ -29,7 +29,7 @@ export type RowProps = {
   label: string;
   values: Value[];
   highlight?: "min" | "max" | undefined;
-  formatValue?: (value: NonNullable<Value> | null) => string;
+  formatValue?: (value: NonNullable<Value> | null) => ReactNode;
 };
 
 export const Row: FC<RowProps> = ({

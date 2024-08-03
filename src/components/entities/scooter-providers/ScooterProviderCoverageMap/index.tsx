@@ -1,17 +1,15 @@
 import { FC, useState } from "react";
 import { Source, Layer } from "react-map-gl";
 
-import Map from "components/map";
-import { ANCHORS } from "utils";
-
 import { scooterProviders } from "data/scooterProviders";
+import { Map } from "components/base";
 
 const KYIV_COORDINATES = {
   latitude: 50.450001,
   longitude: 30.523333,
 };
 
-export const CoverageMapSection: FC = () => {
+export const ScooterProviderCoverageMap: FC = () => {
   const [providersVisibility, setProvidersVisibility] = useState<{
     [providerId: string]: boolean;
   }>(
@@ -21,7 +19,7 @@ export const CoverageMapSection: FC = () => {
   );
 
   return (
-    <section id={ANCHORS.coverageMap}>
+    <div>
       <div className="h-[512px]">
         <Map
           initialViewState={{
@@ -88,6 +86,6 @@ export const CoverageMapSection: FC = () => {
           );
         })}
       </fieldset>
-    </section>
+    </div>
   );
 };

@@ -1,19 +1,14 @@
 import { FC } from "react";
 
-import { Header } from "components/header";
-import { Footer } from "components/footer";
+import { HomePage } from "components/pages/home";
 
-import { IntroSection } from "./ui";
-import { PriceComparisonSection } from "./ui/PriceComparisonSection";
-import { CoverageMapSection } from "./ui/CoverageMapSection";
+import { Footer, Header } from "./ui";
 
 export const App: FC = () => (
   <>
     <Header />
     <main>
-      <IntroSection />
-      <CoverageMapSection />
-      <PriceComparisonSection />
+      <HomePage />
     </main>
     <Footer />
   </>

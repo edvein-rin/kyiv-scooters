@@ -2,16 +2,15 @@ import { FC } from "react";
 
 import { scooterProviders } from "data/scooterProviders";
 import { styles } from "utils";
+import { Row } from "components/base/Row";
 
-import { Row } from "./ui";
-
-export type PriceComparisonTableProps = {
+export type ScooterProviderPriceTableProps = {
   className?: string;
 };
 
-export const PriceComparisonTable: FC<PriceComparisonTableProps> = ({
-  className,
-}) => (
+export const ScooterProviderPriceTable: FC<
+  ScooterProviderPriceTableProps
+> = ({ className }) => (
   <table
     align="left"
     className={styles(

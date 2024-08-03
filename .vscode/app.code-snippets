@@ -1,0 +1,48 @@
+/*
+Current filename without its extensions: index.tsx -> index
+${TM_FILENAME_BASE}
+
+Current folder name: Component/index.tsx -> Component
+${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}
+
+Parent dir: Domen/Component/index.jsx -> Domen
+${TM_DIRECTORY/^.+[\\\/\\\\]+(.+)[\\\/\\\\]+.*$/$1/}
+*/
+{
+  "Component": {
+    "scope": "typescriptreact",
+    "prefix": "comp",
+    "body": [
+      /*
+      import { type FC } from 'react';
+
+      import { styles } from 'utils';
+
+      export type ComponentProps = {
+        className?: string;
+      }
+
+      export const Component: FC<ComponentProps> = ({ className }) {
+        return <div className={styles(className)}>Component</div>;
+      }
+      */
+      "import { type FC } from 'react';",
+      "",
+      "import { styles } from 'utils';",
+      "",
+      "export type ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Props = {",
+      "  className?: string;",
+      "}",
+      "",
+      "export const ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}: FC<${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Props> = ({ className }) => {",
+      "  return <div className={styles(className)}>${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}$0</div>;",
+      "};",
+      ""
+    ]
+  },
+  "export * from": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "expo",
+    "body": ["export * from '$0';"]
+  }
+}
