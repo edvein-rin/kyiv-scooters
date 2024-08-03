@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@mapbox/geojson-area':
+    specifier: 0.2.2
+    version: 0.2.2
   '@testing-library/jest-dom':
     specifier: ^5.17.0
     version: 5.17.0
@@ -61,6 +64,9 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: 0.5.13
     version: 0.5.13(tailwindcss@3.4.7)
+  '@types/mapbox__geojson-area':
+    specifier: 0.2.6
+    version: 0.2.6
   gh-pages:
     specifier: 6.1.1
     version: 6.1.1
@@ -2136,6 +2142,12 @@ packages:
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
     dev: false
 
+  /@mapbox/geojson-area@0.2.2:
+    resolution: {integrity: sha512-bBqqFn1kIbLBfn7Yq1PzzwVkPYQr9lVUeT8Dhd0NL5n76PBuXzOcuLV7GOSbEB1ia8qWxH4COCvFpziEu/yReA==}
+    dependencies:
+      wgs84: 0.0.0
+    dev: false
+
   /@mapbox/jsonlint-lines-primitives@2.0.2:
     resolution: {integrity: sha512-rY0o9A5ECsTQRVhv7tL/OyDpGAoUB4tTvLiW1DSzQGq4bvTPhNw1VpSNjDJc5GFZ2XuyOtSWSVN05qOtcD71qQ==}
     engines: {node: '>= 0.6'}
@@ -2639,7 +2651,6 @@ packages:
 
   /@types/geojson@7946.0.14:
     resolution: {integrity: sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==}
-    dev: false
 
   /@types/graceful-fs@4.1.9:
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
@@ -2697,6 +2708,12 @@ packages:
     dependencies:
       '@types/geojson': 7946.0.14
     dev: false
+
+  /@types/mapbox__geojson-area@0.2.6:
+    resolution: {integrity: sha512-Fs4BRS9zalj1lE+gm5d1Fu0kS+C7HWkH3zC5Iuq8QFBjxo9aAIm0dCHGy7Xtt/xI/jlEEf6SWU0LXkGMQZhIqA==}
+    dependencies:
+      '@types/geojson': 7946.0.14
+    dev: true
 
   /@types/mapbox__point-geometry@0.1.4:
     resolution: {integrity: sha512-mUWlSxAmYLfwnRBmgYV86tgYmMIICX4kza8YnE/eIlywGe2XoOxlpVnXWwir92xRLjwyarqwpu2EJKD2pk0IUA==}
@@ -10874,6 +10891,10 @@ packages:
   /websocket-extensions@0.1.4:
     resolution: {integrity: sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==}
     engines: {node: '>=0.8.0'}
+    dev: false
+
+  /wgs84@0.0.0:
+    resolution: {integrity: sha512-ANHlY4Rb5kHw40D0NJ6moaVfOCMrp9Gpd1R/AIQYg2ko4/jzcJ+TVXYYF6kXJqQwITvEZP4yEthjM7U6rYlljQ==}
     dev: false
 
   /whatwg-encoding@1.0.5:
